@@ -1,9 +1,10 @@
-Shopping App for Buying Snax/food items from theatre's Shop:
-============================================================
-**Developed in** 
-Core Php,Mysql,Javascript,Jquery,Html
-**Description** 
-This App is used for purchasing food items from theatre's Snax Shop.
-I wrote Web Services for the Iphone App in php. And developed complete admin panel for managing products, categories, orders of
-the shop. You can buy food items from Iphone app and you will be given a QR Image that can be scaned on snax shop as you arrive and order
-Will be delivered to you then.
+CRM Project
+===========
+**Developed in** Zend1,Mysql,Php,Javascript,Jquery,Ajax
+**Description** This project is a CRM. This CRM is used for managing contacts and clients, like if you want to make any
+company/person your client they will have to pass from following stages target, lead, qualified, active conversation, final negotiation,
+client.
+Moreover Google Cluster map was used for mapping all the contacts according to their current state and address.
+CRM will Show you all the contacts with their current stage.
+This project was built after we completed the Warehouse Application(built in zend1) for the same client.
+ 
