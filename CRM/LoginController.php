@@ -209,10 +209,9 @@
 	 */
 	 
 	 private function _updatePassword($password,$varkey) {
-		$users = new UserModel();
-		$data = array('password'=>$password);				
-		$users->update($data,"varification_key = '$varkey'");
-			
+    	   $users = new UserModel();
+	   $data = array('password'=>$password);				
+	   $users->update($data,"varification_key = '$varkey'");
 	 }
 		
 		
@@ -221,19 +220,19 @@
 	 * @author Muhammad Faisal Siddiq
 	 */
 	public function resizeAction(){
-		$this->_helper->layout->disableLayout();
-		$image = $this->_request->getParam('id');
-		$image = explode("::",$image);
-		if(count($image)>1) {
-			include('class/SimpleImage.php');
-			$mail_sub = new Zend_Config_Ini('application/config.ini', 'production');
-			$base_url = $mail_sub->site_url;
-			$obj = new SimpleImage();
-			$obj->load($base_url."/common/images/".$image[0]);
-			$obj->resize($image[1],$image[2]);
-			$obj->save(realpath("")."/common/cache/picture2.jpg");
-			echo "success";
-		}
-		exit;
-	}
+ 	 $this->_helper->layout->disableLayout();
+ 	 $image = $this->_request->getParam('id');
+ 	 $image = explode("::",$image);
+	 if(count($image)>1) {
+	  include('class/SimpleImage.php');
+  	  $mail_sub = new Zend_Config_Ini('application/config.ini', 'production');
+	  $base_url = $mail_sub->site_url;
+	  $obj = new SimpleImage();
+	  $obj->load($base_url."/common/images/".$image[0]);
+	  $obj->resize($image[1],$image[2]);
+	  $obj->save(realpath("")."/common/cache/picture2.jpg");
+	  echo "success";
+	 }
+	exit;
+      }
  }
